@@ -1,0 +1,7 @@
+Curve Fitting ipynb code file has functions related to curve fitting.
+
+Amrel NRM data for model building final with quadratic lining csv file has the same data as Amreli NRM data for model building final csv file except for refractory lining data. It has data obtained from quadratic interpolation.
+
+This data is used to predict efficiency using Neural Networks. The code for this is available in the file Neural Net models for efficiency quadratic lining.ipynb
+
+The results obtained from Neural Net models for efficiency quadratic lining are further improved by finding an optimal refractory lining profile. The code for optimization is available in the file optimization quadratic lining.ipynb

@@ -1,0 +1,49 @@
+3 categories of models were developed for Phase 1
+
+Category 1: Multi-input Multi-output linear model
+
+Name of the file: Multiple Linear Regression multiple models 1
+Input: Amreli NRM data for model building final CSV file
+Outputs: Pickle files: lin_model.pkl (model) and scaler_input.pkl, scaler_output.pkl (scalers)
+
+Using the similar structure, two models were developed for voltage prediction. One model is when capacitors are removed. Second model is when capacitors are not removed.
+
+Name of the file: Two models for voltage prediction
+Input: Amreli NRM data for model building final CSV file
+Output 1: Pickle files: lin_model_capacitors_removed.pkl (model), scaler_input_capacitors_removed.pkl, scaler_output_capacitors_removed.pkl (scalers)
+
+Output 2: lin_model_no_capacitors_removed.pkl (model), scaler_input_no_capacitors_removed.pkl, scaler_output_no_capacitors_removed.pkl (scalers)
+
+Category 2: Non-linear models for Efficiency prediction
+
+Name of the file: Neural Net Models for Efficiency
+Input: Amreli NRM data for model building final CSV file
+Outputs: model.h5 (model), scaler1.pkl, scaler2.pkl (scalers)
+
+Category 3: Non-linear model for total heat time prediction
+Input: Amreli NRM data for model building final CSV file
+
+
+
+For campaign level predictions:
+
+Name of the file: New Predictive Modelling
+Inputs: Amreli NRM data for model building final CSV file, lin_model_no_capacitors_removed.pkl, scaler_input_no_capacitors_removed.pkl, scaler_output_no_capacitors_removed.pkl, lin_model_capacitors_removed.pkl, scaler_input_capacitors_removed.pkl, scaler_output_capacitors_removed.pkl
+Outputs: Campaign level predictions
+
+Optimization:
+
+For optimizing wrt Efficiency
+Name of the file: Optimizer function
+Inputs: Amreli NRM data for model building final CSV file, model.h5, scaler1.pkl, scaler2.pkl
+Output: Optimal Refractory lining
+
+For optimizing wrt Voltage
+Name of the file: Optimization for refractory lining based on voltage
+Inputs: Amreli NRM data for model building final CSV file, lin_model.pkl, scaler_input.pkl, scaler_output.pkl
+Output: Optimal Refractory lining
+
+
+Others:
+Name of the file: New Predictive Modelling graphs
+Used for generating Voltage vs Refractory lining graph after SGRI requested for it

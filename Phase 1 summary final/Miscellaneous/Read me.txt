@@ -1,0 +1,3 @@
+These codes are to explore if instead of two seperate linear models for voltage prediction (one model for when capacitors removed and one model for when capacitors not removed), what happens if we use one linear model when capacitors not removed and one non-linear model when capacitors are removed.
+
+Conclusion from this experimentation: The results obtained were better when two linear models were used.
